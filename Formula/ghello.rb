@@ -1,8 +1,8 @@
 class Ghello < Formula
   desc "Tyler Framewok Hello World"
   homepage "https://github.com/ki-aura/ghello"
-  url "https://github.com/ki-aura/ghello/archive/refs/tags/v1.2.1.tar.gz"
-  sha256 "9825e1d405f9ccc0a347e7705158a2258f82c5f50bdb4353db85ba2af99b377d"
+  url "https://github.com/ki-aura/ghello/archive/refs/tags/v1.2.2.tar.gz"
+  sha256 "1d8422dce0d1ac2841c857e58bf02f1fa8893225bb31f2207ba7f0ff7d4aecaa"
   license "MIT"
 
   def install
