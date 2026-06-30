@@ -1,0 +1,19 @@
+git tag --list
+grep  "GHELLO_VERSION" ghello.h
+
+git add .
+git commit -m "ready for v2.2.6"
+git push
+git tag -a v2.2.6 -m "Release v2.2.6"
+git push origin v2.2.6
+gh release create v2.2.6 --title "Release v2.2.6" --notes "Release v2.2.6 notes..."
+cd /opt/homebrew/Library/Taps/ki-aura/homebrew-ghello
+curl -L -o v2.2.6.tar.gz https://github.com/ki-aura/ghello/archive/refs/tags/v2.2.6.tar.gz
+shasum -a 256 v2.2.6.tar.gz
+rm *.gz
+
+nano Formula/ghello.rb
+
+git add Formula/ghello.rb
+git commit -m "ready for v2.2.6"
+git push
